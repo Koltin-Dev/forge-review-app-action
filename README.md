@@ -20,6 +20,7 @@ All steps are done using [Forge API](https://forge.laravel.com/api-documentation
 - Setup deploy script using [stub file](#stub-files).
 - Launch deployment.
 - Check deployment and display result output.
+- Enable Laravel integrations (Horizon, Scheduler) if requested.
 
 ### Optional inputs variables
 
@@ -118,6 +119,8 @@ It is highly recommended that you store all inputs using [GitHub Secrets](https:
 | `worker_daemon`             | no       | `true`                                 | Worker "daemon" (if creation is requested).                                                                                                 |
 | `worker_force`              | no       | `false`                                | Worker "force" (if creation is requested).                                                                                                  |
 | `worker_queue`              | no       |                                        | Worker queue (if creation is requested). Default queue will be used if not defined.                                                         |
+| `horizon_enabled`           | no       | `false`                                | Enable Laravel Horizon integration.                                                                                                         |
+| `scheduler_enabled`         | no       | `false`                                | Enable Laravel Scheduler integration.                                                                                                       |
 
 
 ## Outputs
