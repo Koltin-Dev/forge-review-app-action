@@ -1,1 +1,4 @@
 .idea
+
+# Test artifacts
+*.json
